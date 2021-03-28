@@ -1,0 +1,15 @@
+{
+    "name": "framework-arduino-samc-fortytwo",
+    "version": "1.0.0",
+    "description": "Arduino Wiring-based Framework for Microchip SAM C microcontrollers (FortyTwo Systems SAMC Core)",
+    "keywords": [
+      "framework",
+      "arduino",
+      "microchip",
+      "samc"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/fortytwosystems/ArduinoCore-samc"
+    }
+}
