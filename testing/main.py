@@ -1,11 +1,9 @@
-import getopt
-import sys
-import subprocess
+import can_tx
 
 def main():
     portnumber = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:], '')
+        opts, args = getopt.getopt(sys.argv[1:], 'p:')
     except getopt.GetoptError:
         sys.exit(1)
     for opt, arg in opts:
@@ -15,12 +13,10 @@ def main():
     if portnumber == '':
         print("No serial port specified")
         return
-    portnumber_opt = '-d ' + portnumber
-
-    result = subprocess.run(['./can-usb', '-t', '-s 125000', '-b 2000000', portnumber_opt], capture_output=True, text=True)
     
-    print(result)
+    check_count = 0
 
+    check_count += can_tx(portnumber)
 
 if __name__ == "__main__":
     main()
