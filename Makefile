@@ -6,7 +6,7 @@ ROOT_PATH := .
 
 #PACKAGE_NAME := $(basename $(notdir $(CURDIR)))
 PACKAGE_NAME := ArduinoCore-samc
-PACKAGE_VERSION := 0.0.1
+PACKAGE_VERSION := 1.0.0
 
 # -----------------------------------------------------------------------------
 # packaging specific
@@ -33,6 +33,8 @@ all: clean print_info
 	tar --exclude=./.gitattributes \
 		--exclude=./.travis.yml \
 		--exclude=extras \
+		--exclude=microchipstudio \
+		--exclude=testing \
 		--exclude=.git \
 		--exclude=package \
 		--exclude=./Makefile \
