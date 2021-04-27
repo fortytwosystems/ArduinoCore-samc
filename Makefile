@@ -29,23 +29,17 @@ endif
 all: clean print_info
 	@echo ----------------------------------------------------------
 	@echo "Packaging module."
-	mkdir -p package
-	tar --exclude=./.gitattributes \
-		--exclude=./.travis.yml \
-		--exclude=extras \
-		--exclude=microchipstudio \
-		--exclude=testing \
-		--exclude=.git \
-		--exclude=package \
-		--exclude=./Makefile \
-		-cjf "package/$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
+	mkdir samc 
+	mkdir package
+	cp -r bootloaders cores libraries variants boards.txt LICENSE platform.txt programmers.txt README.md samc
+	tar -cjf "package/$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "samc"
 	$(MAKE) --no-builtin-rules postpackaging -C .
 	@echo ----------------------------------------------------------
 
 clean:
 	@echo ----------------------------------------------------------
 	@echo  Cleanup
-	-$(RM) package/$(PACKAGE_NAME)-*.tar.bz2 package/package_$(PACKAGE_NAME)_*.json package/test_package_$(PACKAGE_NAME)_*.json
+	-$(RM) -r package samc
 	@echo ----------------------------------------------------------
 
 print_info:

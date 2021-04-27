@@ -1,5 +1,6 @@
 ArduinoCore-samc*.tar.bz2
-package_*_index.json
+samc
+package
 
 ## Ignore Atmel Studio temporary files and build results
 # https://www.microchip.com/mplab/avr-support/atmel-studio-7

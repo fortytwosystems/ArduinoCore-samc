@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "FortyTwo Systems",
+      "name": "fortytwosystems",
       "maintainer": "FortyTwo Systems",
       "websiteURL": "http://www.fortytwosystems.com/",
       "email": "dave@fortytwosystems.com",
@@ -24,12 +24,12 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "FortyTwo Systems",
+              "packager": "fortytwosystems",
               "name": "gcc-arm-none-eabi",
               "version": "10-2020q4"
             },
             {
-              "packager": "FortyTwo Systems",
+              "packager": "fortytwosystems",
               "name": "bossac",
               "version": "1.9.1-fortytwo-0"
             },
@@ -39,12 +39,12 @@
               "version": "0.10.0-arduino7"
             },
             {
-              "packager": "FortyTwo Systems",
+              "packager": "fortytwosystems",
               "name": "CMSIS",
               "version": "5.7.0"
             },
             {
-              "packager": "FortyTwo Systems",
+              "packager": "fortytwosystems",
               "name": "CMSIS-Microchip",
               "version": "1.0.0"
             }
@@ -200,8 +200,8 @@
               "host": "i686-mingw32",
               "url": "https://github.com/fortytwosystems/BOSSA/releases/download/v1.9.1-fortytwo-0/bossac-1.9.1-fortytwo-0-i686-mingw32.tar.bz2",
               "archiveFileName": "bossac-1.9.1-fortytwo-0-i686-mingw32.tar.bz2",
-              "checksum": "SHA-256:74ec41a2d79e7b95faf8b142bdbbf81ced8348492bbf4e2fb59757dcddd104a4",
-              "size": "736069"
+              "checksum": "SHA-256:4e846b8c5f5565d16af1d049d830a85413454f93a2c4ab11654d487fae7c5179",
+              "size": "736039"
               },
               {
               "host": "x86_64-apple-darwin",
@@ -214,8 +214,8 @@
               "host": "arm-linux-gnueabihf",
               "url": "https://github.com/fortytwosystems/BOSSA/releases/download/v1.9.1-fortytwo-0/bossac-1.9.1-fortytwo-0-arm-linux-gnueabihf.tar.bz2",
               "archiveFileName": "bossac-1.9.1-fortytwo-0-arm-linux-gnueabihf.tar.bz2",
-              "checksum": "SHA-256:fe0cc022559ba415e37df10cb6d7131945d3d0609a1ff00209c110ec5b60c53e",
-              "size": "526315"
+              "checksum": "SHA-256:c1db274d9e4bc9d4bddf0838c5f5cd535a9f9d2f135af2d56988ffae6b62523a",
+              "size": "526241"
               }
           ]
         }
