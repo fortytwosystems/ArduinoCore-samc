@@ -49,7 +49,7 @@ compiler.S.extra_flags=
 compiler.ar.extra_flags=
 compiler.elf2hex.extra_flags=
 
-compiler.arm.cmsis.c.flags="-I{runtime.tools.CMSIS-5.7.0.path}/CMSIS/Core/Include" "-I{runtime.tools.CMSIS-Microchip-1.0.0.path}/samc21/include" "-I{runtime.tools.CMSIS-5.7.0.path}/CMSIS/DSP/Include"
+compiler.arm.cmsis.c.flags="-I{runtime.tools.CMSIS-5.7.0.path}/CMSIS/Core/Include" "-I{runtime.tools.CMSIS-5.7.0.path}/CMSIS/DSP/Include"
 compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.7.0.path}/CMSIS/DSP/build/bin_dsp" -l:BasicMathFunctions/libCMSISDSPBasicMath.a -l:BayesFunctions/libCMSISDSPBayes.a -l:CommonTables/libCMSISDSPCommon.a -l:ComplexMathFunctions/libCMSISDSPComplexMath.a -l:ControllerFunctions/libCMSISDSPController.a -l:DistanceFunctions/libCMSISDSPDistance.a -l:FastMathFunctions/libCMSISDSPFastMath.a -l:FilteringFunctions/libCMSISDSPFiltering.a -l:MatrixFunctions/libCMSISDSPMatrix.a -l:StatisticsFunctions/libCMSISDSPStatistics.a -l:SupportFunctions/libCMSISDSPSupport.a -l:SVMFunctions/libCMSISDSPSVM.a -l:TransformFunctions/libCMSISDSPTransform.a
 
 compiler.libraries.ldflags=
