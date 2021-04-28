@@ -1,62 +1,62 @@
 
 # FortyTwo Systems Uno (SAMC21G)
 # ---------------------------------------
-fortytwo_uno.name=FortyTwo Systems Uno
-fortytwo_uno.vid.0=0x0403
-fortytwo_uno.pid.0=0x6015
+uno.name=FortyTwo Systems Uno
+uno.vid.0=0x0403
+uno.pid.0=0x6015
 
-fortytwo_uno.upload.tool=bossac
-fortytwo_uno.upload.protocol=sam-ba
-fortytwo_uno.upload.maximum_size=262144
-fortytwo_uno.upload.maximum_data_size=32768
-fortytwo_uno.upload.use_1200bps_touch=false
-fortytwo_uno.upload.wait_for_upload_port=false
-fortytwo_uno.upload.native_usb=false
+uno.upload.tool=bossac
+uno.upload.protocol=sam-ba
+uno.upload.maximum_size=262144
+uno.upload.maximum_data_size=32768
+uno.upload.use_1200bps_touch=false
+uno.upload.wait_for_upload_port=false
+uno.upload.native_usb=false
 
-fortytwo_uno.build.mcu=cortex-m0plus
-fortytwo_uno.build.f_cpu=48000000L
-fortytwo_uno.build.usb_product="FortyTwo Systems Uno"
-fortytwo_uno.build.usb_manufacturer="FortyTwo Systems"
-fortytwo_uno.build.board=SAMC_UNO
-fortytwo_uno.build.core=arduino
-fortytwo_uno.build.extra_flags=-D__SAMC21G18A__ -DSAMC21 {build.usb_flags} -I{runtime.tools.CMSIS-Microchip-1.0.0.path}/samc21/include
-fortytwo_uno.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-fortytwo_uno.build.openocdscript=openocd_scripts/fortytwo_uno.cfg
-fortytwo_uno.build.variant=uno
-fortytwo_uno.build.variant_system_lib=
-fortytwo_uno.build.vid=0x0403
-fortytwo_uno.build.pid=0x6015
+uno.build.mcu=cortex-m0plus
+uno.build.f_cpu=48000000L
+uno.build.usb_product="FortyTwo Systems Uno"
+uno.build.usb_manufacturer="FortyTwo Systems"
+uno.build.board=SAMC_UNO
+uno.build.core=arduino
+uno.build.extra_flags=-D__SAMC21G18A__ -DSAMC21 {build.usb_flags} -I{runtime.tools.CMSIS-Microchip-1.0.0.path}/samc21/include
+uno.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+uno.build.openocdscript=openocd_scripts/uno.cfg
+uno.build.variant=uno
+uno.build.variant_system_lib=
+uno.build.vid=0x0403
+uno.build.pid=0x6015
 
-fortytwo_uno.bootloader.tool=openocd
-fortytwo_uno.bootloader.file=fortytwo_uno/fortytwo_uno.hex
+uno.bootloader.tool=openocd
+uno.bootloader.file=fortytwo_uno/fortytwo_uno.hex
 
 # FortyTwo Systems Mega (SAMC21N)
 # --------------------------------------
-fortytwo_mega.name=FortyTwo Systems Mega
-fortytwo_mega.vid.0=0x0403
-fortytwo_mega.pid.0=0x6015
+mega.name=FortyTwo Systems Mega
+mega.vid.0=0x0403
+mega.pid.0=0x6015
 
-fortytwo_mega.upload.tool=bossac
-fortytwo_mega.upload.protocol=sam-ba
-fortytwo_mega.upload.maximum_size=262144
-fortytwo_mega.upload.maximum_data_size=32768
-fortytwo_mega.upload.use_1200bps_touch=false
-fortytwo_mega.upload.wait_for_upload_port=false
-fortytwo_mega.upload.native_usb=false
+mega.upload.tool=bossac
+mega.upload.protocol=sam-ba
+mega.upload.maximum_size=262144
+mega.upload.maximum_data_size=32768
+mega.upload.use_1200bps_touch=false
+mega.upload.wait_for_upload_port=false
+mega.upload.native_usb=false
 
-fortytwo_mega.build.mcu=cortex-m0plus
-fortytwo_mega.build.f_cpu=48000000L
-fortytwo_mega.build.usb_product="FortyTwo Systems Mega"
-fortytwo_mega.build.usb_manufacturer="FortyTwo Systems"
-fortytwo_mega.build.board=SAMC_MEGA
-fortytwo_mega.build.core=arduino
-fortytwo_mega.build.extra_flags=-D__SAMC21N18A__ -DSAMC21N -DSAMC21 {build.usb_flags} -I{runtime.tools.CMSIS-Microchip-1.0.0.path}/samc21n/include
-fortytwo_mega.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
-fortytwo_mega.build.openocdscript=openocd_scripts/fortytwo_mega.cfg
-fortytwo_mega.build.variant=mega
-fortytwo_mega.build.variant_system_lib=
-fortytwo_mega.build.vid=0x0403
-fortytwo_mega.build.pid=0x6015
+mega.build.mcu=cortex-m0plus
+mega.build.f_cpu=48000000L
+mega.build.usb_product="FortyTwo Systems Mega"
+mega.build.usb_manufacturer="FortyTwo Systems"
+mega.build.board=SAMC_MEGA
+mega.build.core=arduino
+mega.build.extra_flags=-D__SAMC21N18A__ -DSAMC21N -DSAMC21 {build.usb_flags} -I{runtime.tools.CMSIS-Microchip-1.0.0.path}/samc21n/include
+mega.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mega.build.openocdscript=openocd_scripts/mega.cfg
+mega.build.variant=mega
+mega.build.variant_system_lib=
+mega.build.vid=0x0403
+mega.build.pid=0x6015
 
-fortytwo_mega.bootloader.tool=openocd
-fortytwo_mega.bootloader.file=fortytwo_mega/fortytwo_mega.hex
+mega.bootloader.tool=openocd
+mega.bootloader.file=fortytwo_mega/fortytwo_mega.hex
